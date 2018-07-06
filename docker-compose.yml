@@ -1,0 +1,15 @@
+version: "2"
+
+services:
+  instance:
+    image: griko/landing-page
+    container_name: landing-page
+    environment:
+      - LETSENCRYPT_EMAIL=grikomsn@gmail.com
+      - LETSENCRYPT_HOST=griko.id
+      - VIRTUAL_HOST=griko.id
+      - VIRTUAL_PORT=6796
+    network_mode: bridge
+    ports:
+      - 6796:6796
+    restart: unless-stopped
