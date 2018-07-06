@@ -7,7 +7,7 @@ export default () => (
     <Column>
       <Card>
         <CardImage>
-          <Image src='http://griko.keybase.pub/shared/images/landing-lbp.png' />
+          <Image src='https://griko.keybase.pub/shared/images/landing-lbp.png' />
         </CardImage>
         <CardContent>
           <Content>
@@ -26,7 +26,7 @@ export default () => (
     <Column>
       <Card>
         <CardImage>
-          <Image src='http://griko.keybase.pub/shared/images/landing-secret.png' />
+          <Image src='https://griko.keybase.pub/shared/images/landing-secret.png' />
         </CardImage>
         <CardContent>
           <Content>
