@@ -1,0 +1,28 @@
+{
+  "name": "landing-page-next",
+  "description": "Personal landing page, powered with Next.js",
+  "version": "1.0.0",
+  "author": "Griko Nibras <grikomsn@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.0",
+    "@fortawesome/free-brands-svg-icons": "^5.1.0",
+    "@fortawesome/free-solid-svg-icons": "^5.1.0",
+    "@fortawesome/react-fontawesome": "^0.1.0",
+    "@zeit/next-css": "^0.2.0",
+    "@zeit/next-sass": "^0.2.0",
+    "bloomer": "^0.6.3",
+    "bulma": "^0.7.1",
+    "emojione": "^3.1.6",
+    "express": "^4.16.3",
+    "next": "^6.1.1",
+    "node-sass": "^4.9.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build && next export -o docs && node postbuild.js",
+    "start": "NODE_ENV=production node server.js"
+  }
+}
