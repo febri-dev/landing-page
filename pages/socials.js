@@ -6,13 +6,18 @@ import LandingFooter from '../components/landing/Footer'
 import LandingNavbar from '../components/landing/Navbar'
 
 const SocialMediaLinks = () => SocialLinks.map(c => (
-  <a href={c.href} target='_blank' key={c.id} className='column is-one-third'>
+  <a href={c.href} target='_blank' key={c.id} className='column is-one-third social-links'>
     <Box style={{ padding: '3rem', backgroundColor: c.color }}>
       <FontAwesomeIcon className='has-text-light' icon={c.classFontAwesome} size='3x' fixedWidth />
       <p className='subtitle' style={{ margin: '2rem 0 0' }}>
         <small>{c.id}</small>
       </p>
     </Box>
+    <style jsx>{`
+      .social-links:hover {
+        transform: scale(1.025)
+      }
+    `}</style>
   </a>
 ))
 
@@ -30,8 +35,6 @@ export default () => (
           <Columns isCentered isMultiline>
             <SocialMediaLinks />
           </Columns>
-          <br />
-          <p>Note: this list is incomplete and may be expanded in the future.</p>
         </Container>
       </HeroBody>
     </Hero>

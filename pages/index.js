@@ -35,7 +35,7 @@ export default () => (
       </HeroBody>
     </Hero>
     <ShamelessPlug />
-    <Section className='has-background-dark'>
+    <Section className='has-background-dark' style={{ paddingLeft: 0, paddingRight: 0 }}>
       <Container isFluid hasTextAlign='centered'>
         <Tile isAncestor style={{ maxWidth: '1024px', margin: '0 auto' }}>
           <Tile isParent>
@@ -49,8 +49,12 @@ export default () => (
               </p>
               <br />
               <div className='buttons' style={{ justifyContent: 'center' }}>
-                <a href='mailto:hello@griko.id' className='button is-info'>hello@griko.id</a>
-                <a href='mailto:griko@protonmail.com' className='button is-warning is-outlined'>griko@protonmail.com</a>
+                <a href='mailto:hello@griko.id' className='button is-info is-outlined'>
+                  <i className='e1a-wave_tone1' /> &nbsp; hello@griko.id
+                </a>
+                <a href='mailto:griko@protonmail.com' className='button is-warning is-outlined'>
+                  <i className='e1a-eyes' /> &nbsp; griko@protonmail.com
+                </a>
               </div>
             </Tile>
           </Tile>
@@ -58,10 +62,5 @@ export default () => (
       </Container>
     </Section>
     <LandingFooter />
-    <style jsx>{`
-      hr {
-        margin: 4rem 0;
-      }
-    `}</style>
   </Layout>
 )

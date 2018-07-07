@@ -6,7 +6,7 @@ import RecentWorks from './RecentWorks'
 import Skills from './Skills'
 
 export default () => (
-  <Section>
+  <Section style={{ paddingLeft: 0, paddingRight: 0 }}>
     <Container isFluid hasTextAlign='centered'>
       <Avatar />
       <Tile isAncestor style={{ maxWidth: '1024px', margin: '0 auto', zIndex: 90 }}>
@@ -33,5 +33,10 @@ export default () => (
         </Tile>
       </Tile>
     </Container>
+    <style jsx>{`
+      hr {
+        margin: 4rem 0;
+      }
+    `}</style>
   </Section>
 )

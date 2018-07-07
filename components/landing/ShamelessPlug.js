@@ -3,7 +3,7 @@ import Card from './Card'
 import Image from './Image'
 
 export default () => (
-  <Section className='has-background-dark' style={{ paddingTop: 0 }}>
+  <Section className='has-background-dark' isPaddingless>
     <Container isFluid hasTextAlign='centered'>
       <Columns style={{ maxWidth: '1024px', margin: '0 auto', padding: '0 2rem' }}>
         <Column>

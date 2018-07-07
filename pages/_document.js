@@ -20,8 +20,13 @@ export default class MyDocument extends Document {
           <link rel='mask-icon' href='/safari-pinned-tab.svg' />
           <meta name='apple-mobile-web-app-title' content={pageTitle} />
           <meta name='application-name' content={pageTitle} />
-          <meta name="msapplication-TileColor" content="#ffc107" />
-          <meta name="theme-color" content="#ffc107" />
+          <meta name='msapplication-TileColor' content='#ffdd57' />
+          <meta name='theme-color' content='#ffdd57' />
+          <meta property='og:title' content='Griko Nibras' />
+          <meta property='og:description' content='Software developer from Surabaya, ID' />
+          <meta property='og:url' content='https://griko.id' />
+          <meta property='og:image' content='/preview.png' />
+          <meta property='og:type' content='profile' />
         </Head>
         <body>
           <Main />
