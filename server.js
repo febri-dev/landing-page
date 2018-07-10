@@ -2,6 +2,7 @@ const { join } = require('path')
 const { parse } = require('url')
 const express = require('express')
 const fs = require('fs')
+const helmet = require('helmet')
 const next = require('next')
 
 const port = parseInt(process.env.PORT, 10) || 6796
@@ -17,6 +18,7 @@ const staticFiles = fs.readdirSync(staticPath)
 app.prepare()
   .then(() => {
     const server = express()
+    server.use(helmet())
 
     server.get('*', (req, res) => {
       const parsedUrl = parse(req.url, true)
@@ -29,6 +31,6 @@ app.prepare()
 
     server.listen(port, (err) => {
       if (err) throw err
-      console.log(`> Houston, we have liftoff! (port ${port})`)
+      console.log(`> Houston, we have liftoff! (http://localhost:${port})`)
     })
   })
