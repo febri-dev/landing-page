@@ -2,7 +2,9 @@
 
 # landing-page
 
-Personal landing page, powered with [Next.js][nextjs] ✨
+Personal landing page, powered with [Next.js][nextjs]  
+Deployed on [griko.netlify.com](https://griko.netlify.com) and
+[griko.now.sh](https://griko.now.sh)
 
 [![Screenshot](preview.png)](https://griko.id)
 
@@ -11,9 +13,11 @@ Personal landing page, powered with [Next.js][nextjs] ✨
 ## Description
 
 After many iterations and deployments throughout many providers, I decided to
-optimize my landing page and host statically it on ~~GitHub Pages~~
-[Netlify](https://griko.netlify.com). Oh and also this got featured on
-[Bulma Expo](https://bulma.io/expo). 😄
+transform my landing page into a progressive web app (it can be opened when
+offline) and deployed it on [Netlify](https://www.netlify.com) and
+[Zeit Now](https://zeit.co/now).
+
+Oh and also this got featured on [Bulma Expo](https://bulma.io/expo). 😄
 
 ## Development
 
@@ -35,7 +39,6 @@ optimize my landing page and host statically it on ~~GitHub Pages~~
 - Publish the `out` directory contents anywhere
   ([GitHub Pages](https://pages.github.com),
   [Netlify](https://www.netlify.com),
-  [Surge.sh](https://surge.sh),
   [Zeit Now](https://zeit.co/now), etc.)
 
 ## Libraries and Packages

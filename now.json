@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "alias": "griko.now.sh",
+  "builds": [
+    {
+      "src": "next.config.js",
+      "use": "@now/next"
+    }
+  ],
+  "github": {
+    "enabled": true,
+    "autoAlias": true
+  }
+}

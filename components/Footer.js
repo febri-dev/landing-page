@@ -45,7 +45,7 @@ export default () => (
         </a>
         .<br />
         <br />
-        Hosted and source code available on{' '}
+        Source code available on{' '}
         <a
           href="https://github.com/grikomsn/landing-page"
           target="_blank"
